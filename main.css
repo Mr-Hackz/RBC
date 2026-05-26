@@ -1,0 +1,650 @@
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    min-height: 175vh;
+    padding-top: 70px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.RBCbanner {
+    background-color:#142d5c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    border: 4px solid #142d5c;
+    border-radius: 10px;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 20px;
+    border: 4px solid #142d5c;
+    border-radius: 15px;
+    margin-right: 15px;
+    justify-content: right;
+
+}
+.navbar a,
+.dropbtn {
+  display: flex-end;
+  align-items:center;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding:10px 15px;
+  font-size:20px;
+  margin-left: 0px;
+  border:none;
+  background:none;
+  cursor:pointer;
+  border-radius: 15px;
+}
+.navbar a:hover,
+.dropbtn:hover {
+    background-color: #142d5c;
+    border-radius: 15px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    border-radius: 15px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f1f1f1;
+    min-width: 180px;
+    z-index: 2000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 15px;
+}
+.dropdown-content a {
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+.dropdown-content a:hover {
+    background-color: #ff7300;
+    color: #ffffff;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.content {
+
+    padding: 20px;
+}
+.login-container{
+        background: rgb(255, 255, 255);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        width: 100%;
+        max-width: 350px;
+        text-align:center;
+        margin-top: 30px;
+        position: absolute;
+        top:250px;
+        opacity: 92%;
+    }
+    .login-container h2 {
+        text-align: top;
+        margin-top: 20px;
+        color: #333;
+        text-align:center;
+    }
+    .form-group {
+        margin-bottom: 5px;
+        text-align:center;
+    }
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #55555500;
+        text-align:center;
+        border-radius:3px
+    }
+    .form-group input {
+        width: 100%;
+        padding: 10px;
+        border: 3px solid #cccccc00;
+        border-radius: 5px;
+        outline: none;
+        transition: border-color 0.3s;
+        text-align:center;
+    }
+    .form-group input:focus {
+        border-color: #1f5898;
+    }
+    .login-btn {
+        width: 100%;
+        padding: 10px;
+        background: #1c7a91;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background 0.3s;
+    }
+    .login-btn:hover {
+        background: #357ABD;
+    }
+    .extra-links {
+        text-align: top;
+        margin-top: 10px;
+    }
+    .extra-links a {
+        color: #4a90e2;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    .extra-links a:hover {
+        text-decoration: underline;
+    }
+.userDisplay{
+    display: flex-end;
+    position: fixed;
+    top:20px;
+    align-items:center;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding:10px 15px;
+    font-size:20px;
+    margin-right: 15px;
+    border:none;
+    background:none;
+    cursor:pointer;
+    font-size:40px;
+}
+.pheading {
+    text-align:center;
+    font-size: 30px;
+    color: #142d5c;
+    position: absolute;
+    top: 100px;
+    padding: -10px;
+    
+}
+.SubtitlePW{
+    text-align: center;
+    top: 250px;
+    right: 165px;
+    font-size: 20px;
+    color: #142d5c;
+    position: absolute;
+}
+.TextPW{
+    right:175px;
+    top: 350px;
+    font-size: 15px;
+    color:#142d5c;
+    position: absolute;
+    width: 600px;
+    justify-content: center;
+}
+.JoeprioloPW {
+    position:absolute;
+    top:290px;
+    left: 40px;
+    height: 675px;
+    width: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.footer{
+    background-color:#142d5c;
+    position: absolute;
+    bottom: -700px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    border: 4px solid #142d5c;
+    border-radius: 0px;
+    padding:100px;
+}
+.footerhome{
+    background-color:#142d5c;
+    position: absolute;
+    bottom: -700px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    border: 4px solid #142d5c;
+    border-radius: 0px;
+    padding: 150px;
+}
+.Loginbody {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color:#ffffff;
+    min-height: 100vh;
+    padding-top: 0px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgback {
+    height: auto;
+    background-image: url(Road.JPG);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display:relative;
+    width: 100%;
+}
+.logo {
+  position:fixed;
+  top:-75px;
+  left: -55px;
+  width: 325px;
+  height:auto; 
+}
+.AOFBody{
+    background-image: url(KaurnaWaterArt.jpg);
+    min-height: 120vh;
+    background-size: cover;
+    background-position: center;
+}
+.AOFWhitebox {
+    background: rgb(255, 255, 255);
+    padding: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    width: 100%;
+    height:  200px;
+    max-width: 750px;
+    text-align:center;
+    margin-top: 30px;
+    position: absolute;
+    top:150px;
+    opacity: 89%;
+    align-items: center;
+}
+.TitleAcknowledgement{
+    text-align:center;
+    display: flex;
+    font-size: 30px;
+    color: #000000;
+    position: absolute;
+    top: -10px;
+    left: 145px;
+    padding: 0px; 
+}
+.TextAOF1{
+    text-align:center;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: #000000;
+    position: absolute;
+    top: 80px;
+    left: 195px;
+    width: 65%;
+    padding: 0px; 
+    font-size: larger;
+}
+.ACKEngT{
+    font-weight: bold;
+    position:absolute;
+    top: 300px;
+    align-items:baseline;
+    left: 50px;
+}
+.ACKKauT{
+    font-weight: bold;
+    position:absolute;
+    top: 300px;
+    right:50px;
+}
+.AckEngText{
+    font-weight: 50;
+    position:absolute;
+    top: 350px;
+    left: 50px;
+    width: 400px;
+    font-size:large;
+}
+.AckKauText{
+    font-weight: 50;
+    position:absolute;
+    top: 350px;
+    right: 50px;
+    width: 400px;
+    font-size:large;
+}
+.Homebody{
+    background-color:#ffffff;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    min-height: 175vh;
+    padding-top: 70px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bghomeimg{
+    width: 100%;
+    height: auto - 10px;
+    position: relative;
+    top: -400px;
+
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 99%);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
+    mask-repeat: no-repeat;
+    mask-size: 100% 100%;
+}
+.ATICtext{
+    position: absolute;
+    font-weight: bolder;
+    color:#cb841f;
+    top: 70px;
+    right: 450px;
+    font-size: xx-large;
+}
+.buttons:hover{
+    background-color: #1c7a91;
+}
+.button1{
+    display: grid;
+    position: absolute;
+    top: 800px;
+    left:150px;
+    background-color: #1d9cb8; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;     
+    border-radius: 6px;       
+    cursor: pointer;            
+    transition: background-color 0.3s ease;
+}
+.button2{
+    display: grid;
+    position: absolute;
+    top: 875px;
+    left:150px;
+    background-color: #1d9cb8; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;     
+    border-radius: 6px;       
+    cursor: pointer;            
+    transition: background-color 0.3s ease;
+}
+.button3{
+    display: grid;
+    position: absolute;
+    top: 950px;
+    left:150px;
+    background-color: #1d9cb8; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;     
+    border-radius: 6px;       
+    cursor: pointer;            
+    transition: background-color 0.3s ease;
+}
+.button4{
+    display: grid;
+    position: absolute;
+    top: 1025px;
+    right:150px;
+    background-color: #1d9cb8; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;     
+    border-radius: 6px;       
+    cursor: pointer;            
+    transition: background-color 0.3s ease;
+}
+.button5{
+    display: grid;
+    position: absolute;
+    top: 800px;
+    right:150px;
+    background-color: #1d9cb8; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;     
+    border-radius: 6px;       
+    cursor: pointer;            
+    transition: background-color 0.3s ease;
+}
+.button6{
+    display: grid;
+    position: absolute;
+    top: 875px;
+    right:150px;
+    background-color: #1d9cb8; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;     
+    border-radius: 6px;       
+    cursor: pointer;            
+    transition: background-color 0.3s ease;
+}
+.button7{
+    display: grid;
+    position: absolute;
+    top: 950px;
+    right:150px;
+    background-color: #1d9cb8; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;     
+    border-radius: 6px;       
+    cursor: pointer;            
+    transition: background-color 0.3s ease;
+}
+.button8{
+    display: grid;
+    position: absolute;
+    top: 1025px;
+    left:150px;
+    background-color: #1d9cb8; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;     
+    border-radius: 6px;       
+    cursor: pointer;            
+    transition: background-color 0.3s ease;
+}
+.OHTitle{
+    font-weight: bold;
+    position:absolute;
+    top: 800px;
+    align-items:center;
+    left: 600px;
+}
+.OHText{
+    font-weight: 50;
+    position:absolute;
+    top: 850px;
+    left: 550px;
+    width: 400px;
+    font-size:large;
+}
+.VTbutton{
+    position: absolute;
+    bottom: -480px;
+    left:300px;
+    display: grid;
+    background-color: #ffffff; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;     
+    border-radius: 6px;       
+    cursor: pointer;            
+    transition: background-color 0.3s ease;
+}
+.Drivebody{
+    background-color:#142d5c;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #142d5c;
+    min-height: 175vh;
+    padding-top: 70px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.TitleWDU{
+    align-items: center;
+    text-align:center;
+    display: flex;
+    font-size: 40px;
+    color: #ffffff;
+    position: absolute;
+    top: 100px;
+    padding: 0px;     
+}
+.SchoolMotto{
+    text-align:center;
+    display: flex;
+    font-size: 50px;
+    color: #1289a4;
+    position: absolute;
+    top: 180px;
+    padding: 0px;    
+}
+.TitleOP{
+    right: 230px;
+    text-align:center;
+    display: flex;
+    font-size: 30px;
+    color: #d26014;
+    position: absolute;
+    top: 300px;
+    padding: 0px; 
+}
+.OurPurposetext{
+    right: 145px;
+    text-align:center;
+    display: flex;
+    font-size: 20px;
+    width: 350px;
+    color: #ffffff;
+    position: absolute;
+    top: 350px;
+    padding: 0px; 
+}
+.OurValues{
+    left: 230px;
+    text-align:center;
+    display: flex;
+    font-size: 30px;
+    color: #d26014;
+    position: absolute;
+    top: 300px;
+    padding: 0px; 
+}
+.OurValuesText{
+    left: 145px;
+    text-align:center;
+    display: flex;
+    font-size: 20px;
+    width: 350px;
+    color: #ffffff;
+    position: absolute;
+    top: 350px;
+    padding: 0px; 
+}
+.CulturalDriverHeading{
+    text-align:center;
+    display: flex;
+    font-size: 50px;
+    color: #d26014;
+    position: absolute;
+    top: 525px;
+    padding: 0px;
+}
+.CDText{
+    text-align:left;
+    display: flex;
+    font-size: 20px;
+    width: 550px;
+    color: #ffffff;
+    position: absolute;
+    top: 610px;
+    padding: 0px; 
+}
+.Adminpaneluser1{
+    color: black;
+    position: absolute;
+    top:200px;
+}
+.titletimet{
+    text-align:center;
+    font-size: 50px;
+    color: #ffffff;
+    position: fixed;
+    top: -20px;
+    padding: -10px;
+    left: 30%;
+    
+}
+.Timetable123{
+  position: absolute;
+  top:150px;
+  left:75px;
+  width: 600px;
+  height: auto;
+  border: #000000;
+  border-width: 5px;
+  border-radius: 2%;
+}

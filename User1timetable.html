@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="main.css">
+<head>
+   <title> Principal's Welcome </title>
+</head>
+<div class="RBCbanner">
+    <nav class="navbar">
+        <a href="https://www.riverbankscollege.sa.edu.au/"><img src="RBC Img Html.png" class="logo"></a>
+        <h1 class="titletimet" id="titleText"></h1>
+        <a href="Login.html">Logout</a>
+        <script>
+            // ✅ Check if user is logged in
+            const user = localStorage.getItem("loggedInUser");
+            if (!user) {
+                // Not logged in → send back to login
+                window.location.href = "Login.html";
+            } else {
+                document.getElementById("titleText").innerText = user + "'s Timetable";
+
+            }
+
+
+</script>
+
+<img src="Timetable1.png" class="Timetable123">
+    </nav>
+</div>
+</head>
+<body>
+
+
+</body>
+</html>

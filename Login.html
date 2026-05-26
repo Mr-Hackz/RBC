@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riverbanks College - Login</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="RBC Img Html.png" type="image/png">
+</head>
+<body class="Loginbody">
+    <div class="imgback">
+    </div>
+
+<!-- School Portal Nav -->
+<div class="RBCbanner">
+    <nav class="navbar">
+        <a href="https://www.riverbankscollege.sa.edu.au/"><img src="RBC Img Html.png" class="logo"></a>
+        <a href="EIF-websitehp.html">Home</a>
+
+        <div class="dropdown">
+            <button class="dropbtn">Our School ▼</button>
+            <div class="dropdown-content">
+                <a href="Principal.html">Principal</a>
+                <a href="#">Acknowledgement Of Country</a>
+                <a href="#">Our Team</a>
+                <a href="#">What Drives Us</a>
+                <a href="#">Publications</a>
+                <a href="#">Policies and Procedures</a>
+                <a href="#">Aboriginal Tree Sculpture</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Parent Information ▼</button>
+            <div class="dropdown-content">
+                <a href="#">Enrolment</a>
+                <a href="#">Fees</a>
+                <a href="#">Uniform</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Preschool ▼</button>
+            <div class="dropdown-content">
+                <a href="#">Programs</a>
+                <a href="#">Staff</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Wellbeing ▼</button>
+            <div class="dropdown-content">
+                <a href="#">Support</a>
+                <a href="#">Counselling</a>
+            </div>
+        </div>
+
+        <div class="LogInButton">
+            <a href="Login.html">Log in</a>
+        </div>
+    </nav>
+</div>
+
+<!-- Other Login Form -->
+<div class="login-container">
+    <h2>RBC Learning Portal</h2>
+    <form id="otherLoginForm">
+        <label for="otherUsername">Username</label><br>
+        <input type="text" id="otherUsername" placeholder="Username"><br><br>
+
+        <label for="otherPassword">Password</label><br>
+        <input type="password" id="otherPassword" placeholder="Password"><br><br>
+
+        <button type="submit" class="login-btn">Log In</button>
+    </form>
+    <p id="otherLoginError" style="color:red;"></p>
+</div>
+
+<script>
+// ✅ Other login accounts stored locally
+const otherAccounts = {
+    AdminRBC: {
+        password: "RBC123",
+        page: "User1timetable.html"
+    },
+    Teacher255: {
+        password: "Teaching245",
+        page: "User1timetable.html"
+    },
+    charlie: {
+        password: "mypassword",
+        page: "User1timetable.html"
+    }
+};
+
+// Bind to the other login form only
+document.getElementById("otherLoginForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const username = document.getElementById("otherUsername").value.trim();
+    const password = document.getElementById("otherPassword").value.trim();
+    const error = document.getElementById("otherLoginError");
+
+    error.innerText = "";
+
+    // ❌ Empty fields
+    if (!username || !password) {
+        error.innerText = "Please enter both username and password.";
+        return;
+    }
+
+    // ❌ Username not found
+    if (!otherAccounts[username]) {
+        error.innerText = "Username not found.";
+        return;
+    }
+
+    // ❌ Incorrect password
+    if (otherAccounts[username].password !== password) {
+        error.innerText = "Incorrect password.";
+        return;
+    }
+
+    // ✅ Success → store login state locally
+    localStorage.setItem("loggedInUser", username);
+
+    // Redirect to the user's page
+    window.location.href = otherAccounts[username].page;
+});
+</script>
+
+</body>
+</html>
