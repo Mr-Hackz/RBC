@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riverbanks College - Riverbanks College B-12</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="RBC Img Html.png" type="image/png">
+</head>
+
+<body class="Homebody">
+
+<div class="RBCbanner">
+    <nav class="navbar">
+        <a href="https://www.riverbankscollege.sa.edu.au/"><img src="RBC Img Html.png" class="logo"></a>
+        <a href="EIF-websitehp.html">Home</a>
+        
+
+        <div class="dropdown">
+            <button class="dropbtn">Our School</button>
+            <div class="dropdown-content">
+                <a href="Principal.html">Principal's Welcome</a>
+                <a href="AOF.html">Acknowledgement Of Country</a>
+                <a href="#">Our Team</a>
+                <a href="WDU.html">What Drives Us</a>
+                <a href="#">Publications</a>
+                <a href="#">Policies and Procedures</a>
+                <a href="#">Aboriginal Tree Sculpture</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Parent Information</button>
+            <div class="dropdown-content">
+                <a href="#">Enrolments</a>
+                <a href="#">Timetables</a>
+                <a href="#">Buses</a>
+                <a href="#">Vocational Education <br> and Training</a>
+                <a href="#">Canteen</a>
+                <a href="#">Financing and <br>Fees</a>
+                <a href="#">Governing Council</a>
+                <a href="#">Key Dates</a>
+                <a href="#">Newsletters</a>
+                <a href="#">SACE Curriculum Guide</a>
+                <a href="#">OSHC</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Preschool</button>
+            <div class="dropdown-content">
+                <a href="#">Preschool</a>
+                <a href="#">Preschool Brochure</a>
+                <a href="#">Preschool Policies</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Wellbeing</button>
+            <div class="dropdown-content">
+                <a href="#">Report a <br>Wellbeing Concern</a>
+                <a href="#">Attendance Policy</a>
+                <a href="#">Bullying Prevention<br> Policy</a>
+            </div>
+        </div>
+        <div class="LogInButton">
+        <a href="Login.html">Log in</a>
+        </div>
+    </nav>
+</div>
+
+
+<img src="1234.JPG" class="bghomeimg">
+<div class="ATICtext">
+    <h2>
+        A Thriving, <br>Inclusive Community!
+    </h2>
+</div>
+<div class="buttons">
+    <a href="" class="button1">School Policies</a>
+    <a href="" class="button2">School Calendar</a>
+    <a href="" class="button3">School Buses</a>
+    <a href="" class="button4">Report a wellbeing concern</a>
+    <a href="" class="button5">SACE/VET Inforation</a>
+    <a href="" class="button6">School Publications</a>
+    <a href="" class="button7">Uniform</a>
+    <a href="" class="button8">Enrolments</a>
+</div>
+<div class="OHTitle"> 
+    <h2> Office Hours</h2>
+</div>
+<div class="OHText">
+    <br> Monday – 8.30am and 3.30pm <br><br>
+
+Tuesday – 8.30am and 3.30pm <br><br>
+
+Wednesday – 8.30am and 3.30pm <br><br>
+
+Thursday – 8.00am and 2.00pm <br><br>
+
+Friday – 8.30am and 3.30pm
+</div>
+<div class="footerhome">
+</div>
+<a href="" class="VTbutton">Take a Virtual Tour!</a>
+</body>
+</html>
